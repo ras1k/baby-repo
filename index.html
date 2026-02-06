@@ -6,11 +6,25 @@
 
 <title>Rumaisa Noor</title>
 
-<!-- Tailwind -->
+
 <script src="https://cdn.tailwindcss.com"></script>
 
-<!-- Fonts -->
+
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;400&display=swap" rel="stylesheet">
+
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Rumaisa Noor" />
+<meta property="og:description" content="Alhamdulillah. We joyfully announce the birth of our beautiful daughter." />
+<meta property="og:image" content="https://yourwebsite.com/IMG20260206135337.jpg" />
+<meta property="og:url" content="https://yourwebsite.com" />
+
+
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<meta name="twitter:card" content="summary_large_image">
+
 
 <style>
 body {
@@ -20,7 +34,6 @@ h1, h2 {
   font-family: 'Playfair Display', serif;
 }
 
-/* Floating hearts */
 .heart {
   position: fixed;
   top: -30px;
@@ -45,12 +58,12 @@ h1, h2 {
 
 <body class="bg-gradient-to-b from-rose-50 via-pink-50 to-purple-50 min-h-screen flex items-center justify-center px-4">
 
-<!-- Card -->
+
 <div class="bg-white/90 backdrop-blur-md shadow-2xl my-2 rounded-3xl max-w-lg w-full overflow-hidden">
 
-  <!-- Image -->
+
   <div class="h-80 w-full overflow-hidden">
-    <!-- Replace baby.jpg -->
+   
     <img 
       src="./IMG20260206135337.jpg" 
       alt="Rumaisa Noor"
@@ -58,7 +71,7 @@ h1, h2 {
     >
   </div>
 
-  <!-- Content -->
+
   <div class="px-4 py-4 text-center">
 
     <p class="uppercase tracking-widest text-xs text-gray-500 mb-2">
@@ -90,14 +103,13 @@ May Allah bless her with a beautiful life, a gentle heart, and strong faith. May
 
 </div>
 
-<!-- Soft Audio -->
+
 <audio id="welcomeSound">
   <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_54d8c9c7c1.mp3?filename=soft-piano-logo-112191.mp3" type="audio/mpeg">
 </audio>
 
-<!-- Scripts -->
 <script>
-/* Floating Hearts */
+
 function createHeart() {
   const heart = document.createElement("div");
   heart.className = "heart";
@@ -113,9 +125,9 @@ for (let i = 0; i < 20; i++) {
   setTimeout(createHeart, i * 300);
 }
 
-/* Soft Sound */
+
 const sound = document.getElementById("welcomeSound");
-sound.volume = 0.15; // very low volume
+sound.volume = 0.25; 
 
 window.addEventListener("click", () => {
   sound.play();
